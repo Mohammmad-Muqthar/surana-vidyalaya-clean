@@ -1,7 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { photos, school } from "../data/siteContent";
 import SectionHeading from "./SectionHeading";
-import "./Programs.css";
+import "./programs.css";
 
 const programs = [
   { title: "Early Years", level: "NURSERY – UKG", text: "A warm, playful beginning where curiosity comes naturally.", src: photos.kinder, tone: "coral" },

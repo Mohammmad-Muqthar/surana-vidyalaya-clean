@@ -1,7 +1,7 @@
 import { ArrowUpRight, Leaf, Sparkles } from "lucide-react";
 import { photos, school } from "../data/siteContent";
 import SectionHeading from "./SectionHeading";
-import "./About.css";
+import "./about.css";
 
 export default function About() {
   return <section className="section about-section" id="about"><div className="container about-grid">

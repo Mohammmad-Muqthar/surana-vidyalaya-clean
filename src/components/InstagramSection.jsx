@@ -1,7 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { instagram, photos } from "../data/siteContent";
 import SectionHeading from "./SectionHeading";
-import "./InstagramSection.css";
+import "./instagramsection.css";
 
 const images = [photos.primary, photos.kinder, photos.team, photos.sports];
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ArrowUpRight, ChevronDown, Menu, X, Phone, Mail } from "lucide-react";
 import { admission } from "../data/siteContent";
-import "./Navbar.css";
+import "./navbar.css";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);

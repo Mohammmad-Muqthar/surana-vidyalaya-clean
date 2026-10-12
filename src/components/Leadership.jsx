@@ -1,7 +1,7 @@
 import { Quote } from "lucide-react";
 import { leaders } from "../data/siteContent";
 import SectionHeading from "./SectionHeading";
-import "./Leadership.css";
+import "./leadership.css";
 
 export default function Leadership() {
   return <section className="section leadership-section"><div className="container">

@@ -1,5 +1,5 @@
 import { BookOpen, GraduationCap, Heart, Sparkles } from "lucide-react";
-import "./Stats.css";
+import "./stats.css";
 
 const stats = [
   { value: "Since 1995", label: "A legacy of learning", icon: BookOpen, tone: "peach" },

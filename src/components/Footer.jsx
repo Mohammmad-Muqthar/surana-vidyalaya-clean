@@ -1,6 +1,6 @@
 import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 import { admission, instagram, school } from "../data/siteContent";
-import "./Footer.css";
+import "./footer.css";
 
 function InstagramMark({ size = 17 }) {
   return (

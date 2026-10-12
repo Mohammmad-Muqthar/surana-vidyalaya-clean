@@ -1,13 +1,10 @@
-Surana Vidyalaya React source
+Surana Vidyalaya React source folder
 
-Structure:
-- App.jsx imports each homepage section from src/components.
-- data/siteContent.js contains shared content and links.
-- styles/global.css contains global styles.
-- main.jsx is the React entry point.
+Replace your existing src folder with this src folder. Keep package.json, index.html, vite.config.js, and node_modules in the project root.
 
-Important:
-1. Keep component filenames and import paths case-matched (for example, About.jsx).
-2. Add your actual logo image at public/logo.png. Navbar and footer use this same path.
-3. The project needs its existing Vite package.json and dependencies (React, lucide-react).
-4. From the project root run npm install, then npm run build to verify before deployment.
+CSS filenames in src/components are normalized to lowercase and all imports match that casing for Linux/Vercel deployments.
+
+Required dependency: lucide-react.
+Place your school logo at public/logo.png.
+
+Before pushing, run: npm run build

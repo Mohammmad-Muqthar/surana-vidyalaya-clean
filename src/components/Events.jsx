@@ -1,7 +1,7 @@
 import { ArrowRight, CalendarDays, MapPin } from "lucide-react";
 import { photos, school } from "../data/siteContent";
 import SectionHeading from "./SectionHeading";
-import "./Events.css";
+import "./events.css";
 
 const events = [
   { day: "22", month: "OCT", title: "Annual Sports Day", time: "School event", tag: "Move & play", src: photos.sports },
