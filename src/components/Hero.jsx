@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ArrowRight, ArrowUpRight, Pause, Play } from "lucide-react";
 import { slides, contact } from "../data/siteContent";
-import "./hero.css";
+import "./Hero.styles.css";
 
 export default function Hero() {
   const [active, setActive] = useState(0);

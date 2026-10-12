@@ -1,7 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { photos, school } from "../data/siteContent";
 import SectionHeading from "./SectionHeading";
-import "./gallery.css";
+import "./Gallery.styles.css";
 
 const gallery = [
   { src: photos.kinder, label: "Little discoveries" }, { src: photos.primary, label: "Learning together" },

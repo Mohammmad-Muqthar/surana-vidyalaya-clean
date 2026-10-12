@@ -1,0 +1,29 @@
+.events-section { background: #eaf2ee; }
+.events-layout { display: grid; grid-template-columns: 1.1fr 1fr; gap: 26px; }
+.event-feature { overflow: hidden; background: #fff; border-radius: 5px 27px 5px 5px; box-shadow: 0 10px 32px rgba(42,52,80,.07); }
+.event-feature-image { position: relative; height: 305px; overflow: hidden; }
+.event-feature-image img { width: 100%; height: 100%; object-fit: cover; }
+.event-feature-image > span { position: absolute; left: 20px; bottom: 18px; padding: 8px 12px; background: #f8e7ad; color: #55471c; font-size: 10px; font-weight: 800; }
+.event-feature-copy { padding: 25px; }
+.event-feature-copy > small, .event-tag { color: #49866d; font-size: 10px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
+.event-feature-copy h3 { margin: 10px 0; color: var(--navy); font-size: 25px; }
+.event-feature-copy p, .event-row p { display: flex; align-items: center; gap: 8px; margin: 0 0 17px; color: #707b8d; font-size: 12px; }
+.event-feature-copy a { display: inline-flex; align-items: center; gap: 8px; color: var(--navy); font-size: 12px; font-weight: 800; }
+.event-list { display: flex; flex-direction: column; }
+.event-row { display: grid; grid-template-columns: 67px 1fr 22px; align-items: center; gap: 17px; padding: 23px 0; border-bottom: 1px solid rgba(39,49,76,.15); }
+.event-date { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 70px; background: #fff; color: var(--navy); border-radius: 3px 15px 3px 3px; }
+.event-date strong { font-family: "Manrope", sans-serif; font-size: 25px; }
+.event-date small { color: #d66a51; font-size: 10px; font-weight: 800; }
+.event-row h3 { margin: 7px 0 9px; color: var(--navy); font-size: 16px; line-height: 1.4; }
+.event-row p { margin-bottom: 0; }
+.event-row > a { color: #4d8b70; }
+.event-note { padding: 24px 0 0 84px; }
+.event-note strong { color: #315f4d; font-family: "Manrope", sans-serif; font-size: 17px; }
+.event-note p { margin: 8px 0 0; color: #687a73; font-size: 12px; line-height: 1.8; }
+@media (max-width: 850px) { .events-layout { grid-template-columns: 1fr; } .event-feature-image { height: 260px; } }
+@media (max-width: 500px) { .event-row { grid-template-columns: 58px 1fr 20px; gap: 12px; } .event-row h3 { font-size: 14px; } .event-note { padding-left: 0; } }
+
+.events-section { background:#f3f1eb; }
+.event-feature-image > span { background:#c99b45; color:#172443; }
+.event-feature-copy > small,.event-tag,.event-row > a { color:#a77a2d; }
+.event-date small { color:#a77a2d; }

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ArrowRight, ArrowUpRight, BellRing } from "lucide-react";
 import { circulars, achievements, school } from "../data/siteContent";
 import SectionHeading from "./SectionHeading";
-import "./updates.css";
+import "./Updates.styles.css";
 
 export default function Updates() {
   const [tab, setTab] = useState("circulars");

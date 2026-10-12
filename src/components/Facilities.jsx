@@ -1,7 +1,7 @@
 import { ArrowUpRight, BookOpen, Calculator, FlaskConical, HeartHandshake, Monitor, Trophy } from "lucide-react";
 import { facilities, school } from "../data/siteContent";
 import SectionHeading from "./SectionHeading";
-import "./facilities.css";
+import "./Facilities.styles.css";
 
 const iconMap = { book: BookOpen, calculator: Calculator, flask: FlaskConical, monitor: Monitor, trophy: Trophy, heart: HeartHandshake };
 
