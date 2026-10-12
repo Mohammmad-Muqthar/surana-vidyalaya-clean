@@ -1,0 +1,143 @@
+/* Surana Vidyalaya — premium dark, colourful theme */
+:root {
+  color-scheme: dark;
+  --navy: #101a35;
+  --navy-deep: #080d1c;
+  --ink: #f3f5ff;
+  --muted: #aab4ca;
+  --paper: #0b1020;
+  --cream: #111a30;
+  --coral: #f5bd58;
+  --coral-deep: #ffd27b;
+  --mint: #43d6c4;
+  --lilac: #a99aff;
+  --sky: #63b8ff;
+  --butter: #f5bd58;
+  background: #0b1020;
+  color: #f3f5ff;
+}
+html { background: #0b1020; }
+body { background: #0b1020 !important; color: #f3f5ff !important; }
+.section { background-color: #0b1020; }
+.section:nth-of-type(even) { background-color: #10182b; }
+.section-heading h2, .section-heading h3 { color: #f5f7ff !important; }
+.section-heading h2 em, .section-heading-light h2 em { color: #f5bd58 !important; }
+.section-description, .body-copy { color: #aab4ca !important; }
+.eyebrow { color: #f5bd58 !important; }
+.eyebrow-line { background: linear-gradient(90deg, #f5bd58, #43d6c4) !important; }
+.inline-link, .hero-text-link, .section-action { color: #f5bd58 !important; }
+.button-coral { background: linear-gradient(135deg, #f5bd58, #f08d65) !important; color: #11172b !important; border: 0 !important; }
+.button-coral:hover { background: linear-gradient(135deg, #ffd985, #ffab7b) !important; }
+.button-outline { color: #f3f5ff !important; border-color: rgba(245,189,88,.55) !important; background: rgba(255,255,255,.03) !important; }
+
+/* Navigation */
+.site-header, .nav-wrap { background: #080d1c !important; color: #f3f5ff !important; }
+.topbar { background: linear-gradient(90deg, #151f40, #20264d, #132b3c) !important; }
+.topbar-welcome { color: #f5bd58 !important; }
+.nav-links > a:not(.nav-apply) { color: #e7ebf8 !important; }
+.nav-links > a:not(.nav-apply):hover { color: #43d6c4 !important; }
+.nav-apply { background: linear-gradient(135deg, #f5bd58, #f08d65) !important; color: #10172b !important; border-color: transparent !important; }
+.menu-toggle { background: #17213b !important; color: #fff !important; border-color: #35415f !important; }
+
+/* Hero */
+.hero { background: #080d1c !important; color: #fff !important; }
+.hero-shade { background: linear-gradient(90deg, rgba(5,9,22,.88), rgba(8,13,28,.55) 55%, rgba(8,13,28,.2)) !important; }
+.hero-kicker { color: #f5bd58 !important; }
+.hero-description { color: rgba(245,247,255,.8) !important; }
+.hero-progress { background: rgba(255,255,255,.28) !important; }
+.hero-progress > span { background: linear-gradient(90deg, #f5bd58, #43d6c4) !important; }
+.hero-controls button, .hero-play, .hero-next { background: rgba(15,24,47,.78) !important; color: #fff !important; border-color: rgba(255,255,255,.25) !important; }
+
+/* Stats strip */
+.stats { background: #121c34 !important; border-color: rgba(255,255,255,.09) !important; }
+.stat-item { border-color: rgba(255,255,255,.12) !important; }
+.stat-item strong { color: #f5f7ff !important; }
+.stat-item > div > span { color: #aab4ca !important; }
+.stat-icon.peach { background: rgba(240,141,101,.16) !important; color: #ffad88 !important; }
+.stat-icon.mint { background: rgba(67,214,196,.15) !important; color: #43d6c4 !important; }
+.stat-icon.lilac { background: rgba(169,154,255,.16) !important; color: #b5a9ff !important; }
+.stat-icon.butter { background: rgba(245,189,88,.16) !important; color: #f5bd58 !important; }
+
+/* Dark cards and section surfaces */
+.about-section, .programs-section, .updates-section, .gallery-section, .social-section { background: #0b1020 !important; }
+.about-image-note { background: rgba(20,31,57,.96) !important; color: #f5f7ff !important; border: 1px solid rgba(245,189,88,.32); box-shadow: 0 18px 50px rgba(0,0,0,.32) !important; }
+.about-image-note > span { background: rgba(67,214,196,.15) !important; color: #43d6c4 !important; }
+.about-orbit { background: #f5bd58 !important; color: #11172b !important; }
+
+.facilities-section { background: radial-gradient(ellipse at 85% 10%, #25305c 0%, #111a32 42%, #0b1020 100%) !important; }
+.facility-card { background: linear-gradient(145deg, #1b2947, #121c34) !important; color: #f4f6ff !important; border: 1px solid rgba(255,255,255,.09); }
+.facility-card:nth-child(3n+1) { border-top: 2px solid #43d6c4; }
+.facility-card:nth-child(3n+2) { border-top: 2px solid #a99aff; }
+.facility-card:nth-child(3n) { border-top: 2px solid #f5bd58; }
+.facility-icon { background: rgba(255,255,255,.07) !important; color: #f5bd58 !important; }
+.facility-arrow { background: rgba(67,214,196,.12) !important; color: #43d6c4 !important; }
+.facility-card p, .facility-card .facility-description { color: #b1bdd4 !important; }
+.facility-link { color: #f5bd58 !important; }
+
+.program-card, .updates-panel, .event-feature, .leader-card, .social-profile { background: linear-gradient(145deg, #182440, #111a30) !important; color: #f3f5ff !important; border: 1px solid rgba(255,255,255,.09) !important; box-shadow: 0 18px 45px rgba(0,0,0,.2) !important; }
+.program-card h3, .event-feature-copy h3, .event-row h3, .updates-panel-head strong, .update-card, .leader-person strong { color: #f3f5ff !important; }
+.program-card p, .event-feature-copy p, .event-row p, .event-note p, .leader-card > p, .update-copy > span { color: #aab4ca !important; }
+.program-link { color: #f5bd58 !important; border-color: rgba(255,255,255,.12) !important; }
+.program-coral .program-level { background: rgba(240,141,101,.15) !important; color: #ffad88 !important; }
+.program-blue .program-level { background: rgba(99,184,255,.15) !important; color: #80c8ff !important; }
+.program-green .program-level { background: rgba(67,214,196,.15) !important; color: #43d6c4 !important; }
+
+.updates-panel-head { background: #1a2643 !important; border-color: rgba(255,255,255,.1) !important; }
+.updates-panel-icon { background: rgba(245,189,88,.15) !important; color: #f5bd58 !important; }
+.update-tabs button { color: #b8c2d8 !important; }
+.update-tabs button.active { background: linear-gradient(135deg, #5a4ab3, #287d89) !important; color: #fff !important; }
+.update-card { border-color: rgba(255,255,255,.09) !important; }
+.update-card:hover { background: rgba(67,214,196,.07) !important; }
+.update-icon.peach { background: rgba(240,141,101,.16) !important; color: #ffad88 !important; }
+.update-icon.mint { background: rgba(67,214,196,.15) !important; color: #43d6c4 !important; }
+.update-icon.lilac { background: rgba(169,154,255,.16) !important; color: #b5a9ff !important; }
+.update-icon.butter { background: rgba(245,189,88,.16) !important; color: #f5bd58 !important; }
+.update-icon.sky { background: rgba(99,184,255,.16) !important; color: #80c8ff !important; }
+.update-copy small { color: #f5bd58 !important; }
+.update-arrow { color: #43d6c4 !important; }
+
+/* Events */
+.events-section { background: #10182b !important; }
+.event-feature-image > span { background: #f5bd58 !important; color: #11172b !important; }
+.event-feature-copy > small, .event-tag { color: #43d6c4 !important; }
+.event-date { background: #1c2947 !important; color: #fff !important; border: 1px solid rgba(245,189,88,.3); }
+.event-date small { color: #f5bd58 !important; }
+.event-row { border-color: rgba(255,255,255,.12) !important; }
+.event-row > a { color: #43d6c4 !important; }
+.event-note strong { color: #f5bd58 !important; }
+
+/* Leadership */
+.leadership-section { background: radial-gradient(ellipse at 10% 20%, #202b52, #10182b 60%, #0b1020) !important; }
+.leader-card { border-radius: 6px 24px 6px 6px; }
+.leader-card:nth-child(3n+1) { border-top: 2px solid #f5bd58 !important; }
+.leader-card:nth-child(3n+2) { border-top: 2px solid #a99aff !important; }
+.leader-card:nth-child(3n) { border-top: 2px solid #43d6c4 !important; }
+.leader-quote, .leader-person small { color: #f5bd58 !important; }
+.leader-person { border-color: rgba(255,255,255,.12) !important; }
+.leader-person > span { background: rgba(169,154,255,.17) !important; color: #c2b8ff !important; }
+
+/* Gallery and social */
+.gallery-grid a, .gallery-item { background: #17213b !important; }
+.gallery-item::after { background: linear-gradient(180deg, transparent 35%, rgba(6,10,22,.8)) !important; }
+.social-grid a { background: #17213b !important; border: 1px solid rgba(255,255,255,.1); }
+.social-grid a > span { background: #f5bd58 !important; color: #11172b !important; }
+.profile-mark { border-color: #43d6c4 !important; color: #43d6c4 !important; }
+
+/* Footer */
+.site-footer, .footer-main { background: #070b17 !important; color: #f3f5ff !important; }
+.footer-cta { background: linear-gradient(105deg, #f5bd58, #f08d65 48%, #a99aff) !important; color: #10172b !important; }
+.footer-eyebrow { color: #34264a !important; }
+.footer-cta h2 em { color: #fff !important; }
+.footer-cta-button { background: #10172b !important; border-color: #10172b !important; color: #fff !important; }
+.footer-col h3 { color: #43d6c4 !important; }
+.footer-social, .footer-contact .map-link, .footer-bottom a { color: #f5bd58 !important; }
+.footer-bottom { border-color: rgba(255,255,255,.13) !important; }
+
+/* Responsive navigation remains legible on small screens */
+@media (max-width: 900px) {
+  .nav-links { background: #0e162b !important; border-color: rgba(255,255,255,.12) !important; box-shadow: 0 20px 45px rgba(0,0,0,.35) !important; }
+  .nav-links > a:not(.nav-apply) { color: #f3f5ff !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

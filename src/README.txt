@@ -1,10 +1,1 @@
-Surana Vidyalaya React source folder
-
-Replace your existing src folder with this src folder. Keep package.json, index.html, vite.config.js, and node_modules in the project root.
-
-CSS filenames in src/components are normalized to lowercase and all imports match that casing for Linux/Vercel deployments.
-
-Required dependency: lucide-react.
-Place your school logo at public/logo.png.
-
-Before pushing, run: npm run build
+Surana Vidyalaya source folder. This version uses a refined dark slate-blue theme with high-contrast light text, champagne-gold accents, matching header/footer colors, and the scroll-aware navbar. Keep the project root files (package.json, index.html, vite.config.js) and public assets from your existing Vite project. Run npm run build before pushing.

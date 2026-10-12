@@ -1,8 +1,13 @@
 .site-header {
-  position: relative;
-  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   width: 100%;
-  background: #fffefa;
+  background: #dce5ee;
+  box-shadow: 0 8px 28px rgba(31, 48, 68, .08);
+  transform: translateY(0);
+  transition: transform .32s ease, box-shadow .32s ease;
 }
 
 .topbar {
@@ -164,3 +169,10 @@
 @media (prefers-reduced-motion: reduce) {
   .nav-links > a, .nav-apply { transition: none; }
 }
+
+/* Scroll-aware fixed navbar */
+.site-header.header-hidden { transform: translateY(-110%); }
+.site-header.header-visible { transform: translateY(0); }
+body { padding-top: 0; }
+html { scroll-padding-top: 110px; }
+@media (prefers-reduced-motion: reduce) { .site-header { transition: none; } }

@@ -1,14 +1,33 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ArrowUpRight, ChevronDown, Menu, X, Phone, Mail } from "lucide-react";
 import { admission } from "../data/siteContent";
 import "./Navbar.styles.css";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [showOnScrollUp, setShowOnScrollUp] = useState(true);
   const close = () => setOpen(false);
 
+  useEffect(() => {
+    let previousY = window.scrollY;
+    const handleScroll = () => {
+      const currentY = window.scrollY;
+      if (currentY < 80) {
+        setShowOnScrollUp(true);
+      } else if (currentY < previousY - 2) {
+        setShowOnScrollUp(true);
+      } else if (currentY > previousY + 2) {
+        setShowOnScrollUp(false);
+        setOpen(false);
+      }
+      previousY = currentY;
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="site-header" id="top">
+    <header className={`site-header ${showOnScrollUp ? "header-visible" : "header-hidden"}`} id="top">
       <div className="topbar">
         <div className="container topbar-inner">
           <span className="topbar-welcome">
