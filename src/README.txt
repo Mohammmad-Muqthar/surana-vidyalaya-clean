@@ -1,22 +1,13 @@
-SURANA VIDYALAYA — PREMIUM SRC (REVISION 2)
+Surana Vidyalaya React source
 
-What changed:
-- Distinct editorial look using warm cream, coral, navy, mint, lilac, sky and butter accents.
-- One consistent typography system across the site: DM Sans for body text and Manrope for headings, with varied weights.
-- Hero is an auto-advancing 3-slide carousel (5.5-second interval), with clickable slide indicators and pause/play control.
-- Facilities section has a strong “World-class facilities” heading and six individually colored cards.
-- Program cards, leadership cards, updates, events, gallery, header and footer have different treatments.
-- Responsive layouts and mobile navigation.
-- No unsupported Facebook/Instagram icon imports.
+Structure:
+- App.jsx imports each homepage section from src/components.
+- data/siteContent.js contains shared content and links.
+- styles/global.css contains global styles.
+- main.jsx is the React entry point.
 
-Install / run:
-1. Copy this src folder into the root of your existing Vite React project.
-2. From the project root, run:
-   npm install lucide-react
-   npm run dev
-3. If your project uses a different entry file, make sure index.html loads /src/main.jsx.
-
-Notes:
-- Google Fonts and Unsplash images require internet access.
-- Photos are illustrative placeholders; use approved school images for production.
-- Confirm contact details and links with the school before publishing.
+Important:
+1. Keep component filenames and import paths case-matched (for example, About.jsx).
+2. Add your actual logo image at public/logo.png. Navbar and footer use this same path.
+3. The project needs its existing Vite package.json and dependencies (React, lucide-react).
+4. From the project root run npm install, then npm run build to verify before deployment.
