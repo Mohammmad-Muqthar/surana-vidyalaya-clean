@@ -1,0 +1,398 @@
+
+/* ================================
+   UPDATES SECTION
+================================ */
+
+.updates-section {
+  background: #fffefa;
+  padding-top: 100px;
+  padding-bottom: 110px;
+}
+
+/* Heading */
+.updates-heading-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 42px;
+}
+
+.updates-heading-row .section-heading {
+  max-width: 790px;
+}
+
+.section-action {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d7b16b;
+  color: var(--navy);
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: color 0.3s ease, gap 0.3s ease;
+}
+
+.section-action:hover {
+  color: #b48738;
+  gap: 15px;
+}
+
+/* ================================
+   NOTICE BOARD CONTAINER
+================================ */
+
+.updates-panel {
+  overflow: hidden;
+  border: 1px solid #e9e5db;
+  border-radius: 4px 28px 4px 4px;
+  background: #ffffff;
+  box-shadow: 0 20px 55px rgba(36, 51, 83, 0.055);
+}
+
+/* Header */
+.updates-panel-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 28px;
+  border-bottom: 1px solid #eae6dc;
+  background: #f8f6f0;
+}
+
+.updates-panel-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 14px 14px 14px 4px;
+  background: #f4dfd5;
+  color: #b8523c;
+}
+
+.updates-panel-head > div:not(.update-tabs) {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.updates-panel-head strong {
+  color: var(--navy);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.updates-panel-head small {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* Tabs */
+.update-tabs {
+  display: flex;
+  gap: 5px;
+  margin-left: auto;
+  padding: 5px;
+  border: 1px solid #e8e3d8;
+  border-radius: 5px 12px 5px 5px;
+  background: #ffffff;
+}
+
+.update-tabs button {
+  padding: 11px 17px;
+  border: none;
+  border-radius: 3px 9px 3px 3px;
+  background: transparent;
+  color: #747d8d;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.update-tabs button.active {
+  background: var(--navy);
+  color: #ffffff;
+}
+
+.update-tabs button:not(.active):hover {
+  background: #f5f1e8;
+  color: var(--navy);
+}
+
+/* ================================
+   INDIVIDUAL NOTICE CARDS
+================================ */
+
+.update-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px;
+  padding: 27px;
+}
+
+.update-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50px minmax(0, 1fr) 30px;
+  align-items: center;
+  gap: 16px;
+  min-height: 122px;
+  padding: 23px 20px;
+  overflow: hidden;
+
+  border: 1px solid #ece8df;
+  border-radius: 4px 18px 4px 4px;
+  background: #fffefa;
+
+  color: var(--navy);
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+/* Gold accent line */
+.update-card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 0;
+  background: #c99a43;
+  content: "";
+  transition: height 0.3s ease;
+}
+
+.update-card:hover {
+  transform: translateY(-4px);
+  border-color: #d8c59f;
+  background: #ffffff;
+  box-shadow: 0 14px 28px rgba(36, 51, 83, 0.075);
+}
+
+.update-card:hover::before {
+  height: 100%;
+}
+
+/* Card icon */
+.update-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 14px 14px 14px 4px;
+  background: #e9e5d9;
+  color: #9a712b;
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.update-card:hover .update-icon {
+  transform: translateY(-2px) rotate(-4deg);
+  background: #f1e6cc;
+}
+
+/* Keep the existing item color classes compatible */
+.update-icon.peach,
+.update-icon.mint,
+.update-icon.lilac,
+.update-icon.butter,
+.update-icon.sky {
+  background: #e9e5d9;
+  color: #9a712b;
+}
+
+/* Card content */
+.update-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.update-copy small {
+  color: #a17c3e;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.1px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.update-copy strong {
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.6;
+  transition: color 0.25s ease;
+}
+
+.update-card:hover .update-copy strong {
+  color: #a77a2d;
+}
+
+.update-copy > span {
+  color: #858c9b;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* Arrow */
+.update-arrow {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #e8e1d3;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #a77a2d;
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.update-card:hover .update-arrow {
+  transform: translateX(3px);
+  border-color: var(--navy);
+  background: var(--navy);
+  color: #ffffff;
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+  .updates-section {
+    padding-top: 75px;
+    padding-bottom: 80px;
+  }
+
+  .update-grid {
+    gap: 13px;
+    padding: 20px;
+  }
+
+  .update-card {
+    grid-template-columns: 42px minmax(0, 1fr) 26px;
+    gap: 12px;
+    padding: 19px 14px;
+  }
+
+  .update-icon {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+  .updates-heading-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 28px;
+  }
+
+  .section-action {
+    margin-bottom: 0;
+  }
+
+  .updates-panel {
+    border-radius: 4px 20px 4px 4px;
+  }
+
+  .updates-panel-head {
+    flex-wrap: wrap;
+    gap: 13px;
+    padding: 18px;
+  }
+
+  .updates-panel-icon {
+    width: 43px;
+    height: 43px;
+  }
+
+  .updates-panel-head > div:not(.update-tabs) {
+    flex: 1;
+    min-width: 150px;
+  }
+
+  .update-tabs {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .update-tabs button {
+    flex: 1;
+    padding: 11px 10px;
+  }
+
+  .update-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .update-card {
+    grid-template-columns: 42px minmax(0, 1fr) 27px;
+    gap: 12px;
+    min-height: 108px;
+    padding: 17px 13px;
+    border-radius: 4px 14px 4px 4px;
+  }
+
+  .update-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px 12px 12px 4px;
+  }
+
+  .update-copy strong {
+    font-size: 12px;
+  }
+
+  .update-copy small {
+    font-size: 8px;
+  }
+
+  .update-copy > span {
+    font-size: 10px;
+  }
+
+  .update-arrow {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .update-card,
+  .update-card::before,
+  .update-icon,
+  .update-arrow,
+  .update-copy strong,
+  .section-action {
+    transition: none;
+  }
+}
