@@ -18,3 +18,22 @@
 @media (max-width: 560px) { .program-grid { grid-template-columns: 1fr; } .program-card:last-child { grid-column: auto; } .program-image { height: 220px; } }
 
 .program-coral .program-level,.program-blue .program-level,.program-green .program-level { background:#e9e5d9; color:#8e692a; }
+
+/* Targeted contrast and section refinements */
+/* Learning pathways: one coordinated dark card palette with readable text */
+.programs-section { background: #f5f3ec; }
+.program-grid .program-card,
+.program-grid .program-card.program-coral,
+.program-grid .program-card.program-blue,
+.program-grid .program-card.program-green {
+  background: #244a52;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: 0 12px 28px rgba(24,49,55,.13);
+}
+.program-grid .program-card:hover { background: #2b5660; box-shadow: 0 18px 36px rgba(24,49,55,.2); }
+.program-card h3 { color: #fff !important; }
+.program-card p { color: #edf3f2 !important; }
+.program-link { color: #f2d18c !important; border-top-color: rgba(255,255,255,.22); }
+.program-coral .program-level, .program-blue .program-level, .program-green .program-level {
+  background: #f2d18c; color: #233f46; }

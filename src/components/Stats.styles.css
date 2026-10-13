@@ -14,3 +14,9 @@
 @media (max-width: 430px) { .stat-item { padding: 5px 8px; gap: 9px; } .stat-icon { flex-basis: 38px; width: 38px; height: 38px; } .stat-item strong { font-size: 12px; } .stat-item > div > span { font-size: 10px; } }
 
 .stat-icon.peach,.stat-icon.mint,.stat-icon.lilac,.stat-icon.butter { background:#e9e5d9; color:#9a712b; }
+
+/* Targeted contrast and section refinements */
+/* Visible statistics and labels */
+.stats { background: #fbfaf6; }
+.stat-item strong { color: #213b43 !important; }
+.stat-item > div > span { color: #46534e !important; }

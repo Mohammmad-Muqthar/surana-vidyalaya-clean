@@ -29,3 +29,25 @@
 
 .update-icon.peach,.update-icon.mint,.update-icon.lilac,.update-icon.butter,.update-icon.sky { background:#e9e5d9; color:#9a712b; }
 .update-arrow { color:#a77a2d; }
+
+/* Accessible notice-card hover: avoid a white hover surface with pale text. */
+.update-card,
+.update-card:visited { color: #203b40 !important; background: transparent; }
+.update-card:hover,
+.update-card:focus-visible {
+  background: #e5efe8 !important;
+  color: #183943 !important;
+  outline: none;
+}
+.update-copy small { color: #785b28 !important; }
+.update-copy strong { color: #203b40 !important; }
+.update-copy > span { color: #465b58 !important; }
+.update-card:hover .update-copy small,
+.update-card:hover .update-copy strong,
+.update-card:hover .update-copy > span,
+.update-card:focus-visible .update-copy small,
+.update-card:focus-visible .update-copy strong,
+.update-card:focus-visible .update-copy > span { color: #183943 !important; }
+.update-arrow, .update-card:hover .update-arrow { color: #986b25 !important; }
+.update-tabs button:not(.active) { color: #52656b !important; }
+.update-tabs button:not(.active):hover { background: #e5efe8 !important; color: #183943 !important; }

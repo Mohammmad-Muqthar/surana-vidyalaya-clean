@@ -14,3 +14,21 @@
 
 .profile-mark { border-color:#d8c69d; color:#9a712b; }
 .social-section { background:#fbfaf6; }
+
+/* Targeted contrast and section refinements */
+/* From our school community: light section, clear profile text, accessible hover */
+.social-section { background: #edf3ed !important; }
+.social-profile { background: transparent !important; }
+.profile-mark { background: #fff !important; color: #28594e !important; border-color: #9db9a8 !important; }
+.social-profile strong { color: #172c2a !important; }
+.social-profile p { color: #3d4b46 !important; }
+.social-grid a { background: #d9e5dc; }
+.social-grid a::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 48%, rgba(18,42,38,.22)); pointer-events: none; opacity: .55; transition: opacity .25s ease; }
+.social-grid a:hover::after { opacity: .9; }
+.social-grid a > span { z-index: 1; background: #fffdf7 !important; color: #244a52 !important; box-shadow: 0 4px 14px rgba(0,0,0,.14); }
+.social-heading-row .section-heading p { color: #303d38 !important; }
+
+/* Final community-section contrast */
+.social-section { background: #edf3ed !important; }
+.social-profile strong { color: #172c2a !important; }
+.social-profile p, .social-heading-row .section-heading p { color: #303d38 !important; }

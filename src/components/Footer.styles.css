@@ -1,5 +1,5 @@
-.site-footer { background: #172443; color: #fff; }
-.footer-cta { background: #c99b45; color: #172443; }
+.site-footer { background: #183943; color: #fff; }
+.footer-cta { background: #c99b45; color: #183943; }
 .footer-cta-inner {
   display: flex; align-items: center; justify-content: space-between;
   gap: 25px; padding-top: 39px; padding-bottom: 39px;
@@ -13,7 +13,7 @@
 .footer-cta-button {
   display: inline-flex; align-items: center; justify-content: center; gap: 11px;
   min-height: 48px; padding: 0 20px; flex-shrink: 0;
-  border: 1px solid #24345b; border-radius: 3px; background: #24345b; color: #fff;
+  border: 1px solid #122d36; border-radius: 3px; background: #122d36; color: #fff;
   font-size: 12px; font-weight: 700; text-decoration: none;
   transition: background .25s ease, transform .25s ease;
 }
@@ -73,3 +73,16 @@
 @media (prefers-reduced-motion: reduce) {
   .footer-cta-button, .footer-social, .footer-col > a, .footer-bottom a { transition: none; }
 }
+
+/* Brand consistency: footer uses the exact same deep teal as the header. */
+.site-footer { background: #183943; color: #f8faf9; }
+.footer-main { background: #183943; }
+.footer-cta { background: #e7c27b; color: #183943; }
+.footer-eyebrow { color: #183943; }
+.footer-cta h2 { color: #183943; }
+.footer-cta h2 em { color: #fff; }
+.footer-cta-button { background: #183943; border-color: #183943; color: #fff; }
+.footer-cta-button:hover { background: #122d36; }
+.footer-col h3, .footer-social, .footer-contact .map-link, .footer-bottom a { color: #e7c27b; }
+.footer-description, .footer-col > a, .footer-col > p, .footer-bottom { color: #e6eeec; }
+.footer-col > a:hover, .footer-bottom a:hover, .footer-social:hover { color: #fff; }

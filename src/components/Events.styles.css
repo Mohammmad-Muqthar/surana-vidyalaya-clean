@@ -27,3 +27,39 @@
 .event-feature-image > span { background:#c99b45; color:#172443; }
 .event-feature-copy > small,.event-tag,.event-row > a { color:#a77a2d; }
 .event-date small { color:#a77a2d; }
+
+/* Targeted contrast and section refinements */
+/* Keep event date numbers and labels legible on the date tile */
+.event-date { background: #fffdf7 !important; color: #244a52 !important; border: 1px solid #d9e2dc; box-shadow: 0 4px 12px rgba(24,49,55,.06); }
+.event-date strong { color: #244a52 !important; opacity: 1 !important; line-height: 1.15; }
+.event-date small { color: #986b25 !important; opacity: 1 !important; }
+.event-row h3 { color: #213b43 !important; }
+.event-row p { color: #34434a !important; }
+.event-tag { color: #8a6327 !important; }
+.event-row > a { color: #286b62 !important; }
+.event-note strong { color: #28594e !important; }
+.event-note p { color: #343f3c !important; }
+
+/* Final date-tile contrast: keep day and month readable on every state. */
+.event-date,
+.event-date:hover,
+.event-date:focus-visible {
+  background: #fffdf7 !important;
+  color: #183943 !important;
+  opacity: 1 !important;
+}
+.event-date strong { color: #183943 !important; opacity: 1 !important; visibility: visible !important; }
+.event-date small { color: #946725 !important; opacity: 1 !important; visibility: visible !important; }
+
+/* Final refinement: high-contrast date tiles and coordinated event colours */
+.event-date,
+.event-date:hover,
+.event-date:focus-visible {
+  background: #244a52 !important;
+  border: 1px solid #244a52 !important;
+  color: #ffffff !important;
+  box-shadow: 0 5px 14px rgba(24,57,67,.16) !important;
+}
+.event-date strong { color: #ffffff !important; font-weight: 800 !important; }
+.event-date small { color: #f2d18c !important; font-weight: 800 !important; }
+.event-row .event-tag { color: #8a6327 !important; }

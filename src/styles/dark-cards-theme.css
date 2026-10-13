@@ -1,0 +1,94 @@
+/* Surana Vidyalaya — cohesive premium dark-card theme */
+:root {
+  --school-deep: #183943;
+  --school-deeper: #122d36;
+  --school-teal: #24515a;
+  --school-blue: #2c4a65;
+  --school-green: #2e5949;
+  --school-slate: #3c5263;
+  --school-ink: #f8faf9;
+  --school-copy: #e0e9e8;
+  --school-muted: #bdcfce;
+  --school-gold: #e7c27b;
+  --school-border: rgba(255,255,255,.14);
+}
+
+/* Dark cards share one coordinated palette; card variations remain subtle. */
+.program-card, .updates-panel, .event-feature, .event-row,
+.leader-card, .facility-card {
+  color: var(--school-ink) !important;
+  border: 1px solid var(--school-border) !important;
+  border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(20, 43, 50, .15) !important;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.program-card { background: linear-gradient(145deg, #24515a, #1b414a) !important; }
+.program-card:nth-child(3n + 2) { background: linear-gradient(145deg, #2c4a65, #233c52) !important; }
+.program-card:nth-child(3n) { background: linear-gradient(145deg, #2e5949, #234638) !important; }
+.updates-panel { background: linear-gradient(145deg, #2c4a65, #223b51) !important; }
+.updates-panel-head { background: rgba(255,255,255,.08) !important; border-bottom: 1px solid var(--school-border) !important; }
+.event-feature { background: linear-gradient(145deg, #2e5949, #234638) !important; }
+.event-row { background: linear-gradient(145deg, #24515a, #1b414a) !important; }
+.event-row:nth-child(even) { background: linear-gradient(145deg, #3c5263, #2e4352) !important; }
+.leader-card { background: linear-gradient(145deg, #2c4a65, #233c52) !important; }
+.leader-card:nth-child(3n + 2) { background: linear-gradient(145deg, #2e5949, #234638) !important; }
+.leader-card:nth-child(3n) { background: linear-gradient(145deg, #3c5263, #2e4352) !important; }
+.facility-card { background: linear-gradient(145deg, #24515a, #1b414a) !important; }
+.facility-card:nth-child(3n + 2) { background: linear-gradient(145deg, #2c4a65, #233c52) !important; }
+.facility-card:nth-child(3n) { background: linear-gradient(145deg, #2e5949, #234638) !important; }
+
+/* Enforce legible headings and descriptions within every dark card. */
+.program-card h1, .program-card h2, .program-card h3, .program-card h4,
+.program-card p, .program-card span, .program-card small, .program-card li,
+.program-card strong, .program-card label, .program-card .program-card-copy,
+.program-card .program-level, .program-card .program-link,
+.updates-panel h1, .updates-panel h2, .updates-panel h3, .updates-panel h4,
+.updates-panel p, .updates-panel span, .updates-panel small, .updates-panel li,
+.updates-panel strong, .event-feature h1, .event-feature h2, .event-feature h3,
+.event-feature h4, .event-feature p, .event-feature span, .event-feature small,
+.event-feature strong, .event-row h2, .event-row h3, .event-row h4,
+.event-row p, .event-row span, .event-row small, .event-row strong,
+.event-date, .event-tag, .leader-card h2, .leader-card h3, .leader-card h4,
+.leader-card p, .leader-card span, .leader-card small, .leader-card strong,
+.leader-quote, .facility-card h2, .facility-card h3, .facility-card h4,
+.facility-card p, .facility-card span, .facility-card small, .facility-card li,
+.facility-card strong, .facility-link, .facility-icon {
+  color: var(--school-ink) !important;
+}
+.program-card p, .program-card small, .program-card li,
+.updates-panel p, .updates-panel small, .event-feature p, .event-feature small,
+.event-row p, .event-row small, .leader-card p, .leader-card small,
+.leader-quote, .facility-card p, .facility-card small {
+  color: var(--school-copy) !important;
+  line-height: 1.75;
+}
+.program-card a, .updates-panel a, .event-feature a, .event-row a,
+.leader-card a, .facility-card a, .program-card .program-link,
+.facility-card .facility-link { color: var(--school-gold) !important; }
+.program-card svg, .updates-panel svg, .event-feature svg, .event-row svg,
+.leader-card svg, .facility-card svg { color: var(--school-gold); }
+.program-card:hover, .updates-panel:hover, .event-feature:hover,
+.event-row:hover, .leader-card:hover, .facility-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(20, 43, 50, .23) !important;
+}
+.program-image, .facility-card-top, .leader-person > span,
+.updates-panel-icon, .event-feature-image > span {
+  border-color: rgba(255,255,255,.2);
+}
+.leader-person { border-color: rgba(255,255,255,.24) !important; }
+.leader-person > span, .updates-panel-icon {
+  background: rgba(255,255,255,.12) !important;
+  color: #fff !important;
+}
+.event-feature-image > span { background: var(--school-gold) !important; color: var(--school-deeper) !important; }
+
+/* Dark card text overrides do not affect the light sections around cards. */
+.section-heading h2, .section-heading h3 { color: #203d43; }
+.section-description, .section-heading p, .body-copy,
+.facilities-side-note, .social-profile p { color: #303d3b !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  .program-card, .updates-panel, .event-feature, .event-row, .leader-card, .facility-card { transition: none; }
+  .program-card:hover, .updates-panel:hover, .event-feature:hover, .event-row:hover, .leader-card:hover, .facility-card:hover { transform: none; }
+}

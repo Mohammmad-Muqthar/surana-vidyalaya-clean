@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App";
 import "./styles/global.css";
 import "./styles/elegant-theme.css";
+import "./styles/dark-cards-theme.css";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
